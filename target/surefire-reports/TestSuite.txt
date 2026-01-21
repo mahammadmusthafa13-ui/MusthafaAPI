@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.44 s <<< FAILURE! -- in TestSuite
+runner.TestRunner.runScenario["Delete payload", "Handling Google maps API"](2) -- Time elapsed: 2.569 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at Utility.BaseClass.getJsonPathValue(BaseClass.java:55)
+	at stepDefination.StepDefination.in_response_is(StepDefination.java:58)
+	at ✽."status" in response is "OK"(file:///C:/Users/MOHAMMED-PC/eclipse-workspace/GoogleMapsAPI/src/test/resources/Features/AddPlaceAPI.feature:27)
+

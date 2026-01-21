@@ -1,0 +1,5 @@
+extent.reporter.spark.start=true
+extent.reporter.spark.out=target/ExtentReport/ExtentReport.html
+
+extent.reporter.spark.config=src/test/resources/spark-config.xml
+extent.reporter.spark.vieworder=dashboard,test,exception,author,device,log

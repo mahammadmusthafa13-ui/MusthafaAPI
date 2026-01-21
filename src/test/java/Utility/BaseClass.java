@@ -1,0 +1,59 @@
+package Utility;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.util.Properties;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+
+
+public class BaseClass 
+{
+	Properties pro;
+	//public static RequestSpecification req;
+	public static RequestSpecification req;
+	public RequestSpecification requestSpecification() throws IOException
+	{
+		
+		if(req==null)
+		{
+		PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
+		 req=new RequestSpecBuilder().setBaseUri(getPropertyValue("BaseURL")).addQueryParam("key", "qaclick123")
+				 .addFilter(RequestLoggingFilter.logRequestTo(log))
+				 .addFilter(ResponseLoggingFilter.logResponseTo(log))
+		.setContentType(ContentType.JSON).build();
+		 return req;
+		}
+		return req;
+		
+		
+	}
+	//propertyvalue=BaseURL
+	public String getPropertyValue(String propertyvalue) throws IOException
+	{
+		pro=new Properties();
+		FileInputStream file=new FileInputStream("Properties_Files/Config.properties");
+		pro.load(file);
+		return pro.getProperty(propertyvalue);
+	}
+	
+	
+
+	public String getJsonPathValue(Response response,String key)
+	{
+		  String resp=response.asString();
+		JsonPath   js = new JsonPath(resp);
+		return js.get(key).toString();
+	}
+	
+}
+

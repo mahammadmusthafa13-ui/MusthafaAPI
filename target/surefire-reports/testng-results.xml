@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-21T17:32:07 IST" name="Surefire suite" finished-at="2026-01-21T17:32:18 IST" duration-ms="10970">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@158da8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-01-21T17:32:07 IST" name="Surefire test" finished-at="2026-01-21T17:32:18 IST" duration-ms="10970">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@158da8e]" started-at="2026-01-21T17:32:07 IST" name="setUpClass" finished-at="2026-01-21T17:32:08 IST" duration-ms="635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3dded90a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@158da8e]" started-at="2026-01-21T17:32:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-21T17:32:15 IST" duration-ms="7652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Place API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Handling Google maps API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@158da8e]" started-at="2026-01-21T17:32:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-21T17:32:18 IST" duration-ms="2571" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete payload"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Handling Google maps API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at Utility.BaseClass.getJsonPathValue(BaseClass.java:55)
+at stepDefination.StepDefination.in_response_is(StepDefination.java:58)
+at ✽."status" in response is "OK"(file:///C:/Users/MOHAMMED-PC/eclipse-workspace/GoogleMapsAPI/src/test/resources/Features/AddPlaceAPI.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@158da8e]" started-at="2026-01-21T17:32:18 IST" name="tearDownClass" finished-at="2026-01-21T17:32:18 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
