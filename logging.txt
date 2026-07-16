@@ -27,8 +27,9 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Wed, 21 Jan 2026 12:02:10 GMT
+Date: Thu, 16 Jul 2026 10:41:07 GMT
 Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
@@ -40,17 +41,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "d68ab3ab90e37173ddb2b90e7da60c18",
+    "place_id": "24c2ebcf409f5e385f035ea457dfd811",
     "scope": "APP",
-    "reference": "92dc11f2b90f597b9bccabae8dce79df92dc11f2b90f597b9bccabae8dce79df",
-    "id": "92dc11f2b90f597b9bccabae8dce79df"
+    "reference": "ce32715897e4291c691902430a167acace32715897e4291c691902430a167aca",
+    "id": "ce32715897e4291c691902430a167aca"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=d68ab3ab90e37173ddb2b90e7da60c18
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=24c2ebcf409f5e385f035ea457dfd811
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=d68ab3ab90e37173ddb2b90e7da60c18
+				place_id=24c2ebcf409f5e385f035ea457dfd811
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,8 +60,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Jan 2026 12:02:11 GMT
+Date: Thu, 16 Jul 2026 10:41:08 GMT
 Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
@@ -96,11 +98,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "d68ab3ab90e37173ddb2b90e7da60c18"
+    "place_id": "24c2ebcf409f5e385f035ea457dfd811"
 }
 HTTP/1.1 200 OK
-Date: Wed, 21 Jan 2026 12:02:13 GMT
+Date: Thu, 16 Jul 2026 10:41:11 GMT
 Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
@@ -126,11 +129,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "d68ab3ab90e37173ddb2b90e7da60c18"
+    "place_id": "24c2ebcf409f5e385f035ea457dfd811"
 }
 HTTP/1.1 404 Not Found
-Date: Wed, 21 Jan 2026 12:02:15 GMT
+Date: Thu, 16 Jul 2026 10:41:15 GMT
 Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600

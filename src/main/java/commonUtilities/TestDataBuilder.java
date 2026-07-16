@@ -1,4 +1,4 @@
-package Utility;
+package commonUtilities;
 
 import java.util.ArrayList;
 import java.util.List;

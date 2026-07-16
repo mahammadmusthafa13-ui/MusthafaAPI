@@ -5,9 +5,9 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
-import Utility.ApiResources;
-import Utility.BaseClass;
-import Utility.TestDataBuilder;
+import baseUtils.BaseClass;
+import commonUtilities.ApiResources;
+import commonUtilities.TestDataBuilder;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
