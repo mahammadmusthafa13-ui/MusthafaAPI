@@ -1,91 +1,4 @@
 Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "accuracy": 50,
-    "name": "name1",
-    "phone_number": "(+91)9838933937",
-    "address": "Hyd1",
-    "website": "http://google.com",
-    "language": "English",
-    "location": {
-        "lat": -38.383494,
-        "lng": 33.427362
-    },
-    "types": [
-        "shoe park",
-        "shop"
-    ]
-}
-HTTP/1.1 200 OK
-Date: Thu, 16 Jul 2026 12:01:49 GMT
-Server: Apache/2.4.52 (Ubuntu)
-Strict-Transport-Security: max-age=604800; includeSubDomains
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK",
-    "place_id": "3beb7f758bbcd24c995e6151870e633a",
-    "scope": "APP",
-    "reference": "8c22c603961909be77ab67939ae2bd5e8c22c603961909be77ab67939ae2bd5e",
-    "id": "8c22c603961909be77ab67939ae2bd5e"
-}
-Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=3beb7f758bbcd24c995e6151870e633a
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-				place_id=3beb7f758bbcd24c995e6151870e633a
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Thu, 16 Jul 2026 12:01:50 GMT
-Server: Apache/2.4.52 (Ubuntu)
-Strict-Transport-Security: max-age=604800; includeSubDomains
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 221
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "name1",
-    "phone_number": "(+91)9838933937",
-    "address": "Hyd1",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "English"
-}
-Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
 Proxy:			<none>
 Request params:	<none>
@@ -98,41 +11,41 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "3beb7f758bbcd24c995e6151870e633a"
-}
-HTTP/1.1 200 OK
-Date: Thu, 16 Jul 2026 12:01:54 GMT
-Server: Apache/2.4.52 (Ubuntu)
-Strict-Transport-Security: max-age=604800; includeSubDomains
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 15
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK"
-}
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "place_id": "3beb7f758bbcd24c995e6151870e633a"
+    "place_id": "44df8970aa78cb4bc2cfa870c4ccd9e4"
 }
 HTTP/1.1 404 Not Found
-Date: Thu, 16 Jul 2026 12:01:58 GMT
+Date: Wed, 22 Jul 2026 09:42:15 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 69
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete operation failed, looks like the data doesn't exists"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "44df8970aa78cb4bc2cfa870c4ccd9e4"
+}
+HTTP/1.1 404 Not Found
+Date: Wed, 22 Jul 2026 09:42:18 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
