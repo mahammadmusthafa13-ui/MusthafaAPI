@@ -18,27 +18,28 @@ import io.restassured.specification.RequestSpecification;
 
 public class BaseClass 
 {
-	Properties pro;
+	public static Properties pro;
 	//public static RequestSpecification req;
 	public static RequestSpecification req;
-	public RequestSpecification requestSpecification() throws IOException
-	{
-		
-		if(req==null)
-		{
-		PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
-		 req=new RequestSpecBuilder().setBaseUri(getPropertyValue("BaseURL")).addQueryParam("key", "qaclick123")
-				 .addFilter(RequestLoggingFilter.logRequestTo(log))
-				 .addFilter(ResponseLoggingFilter.logResponseTo(log))
-		.setContentType(ContentType.JSON).build();
-		 return req;
-		}
-		return req;
-		
-		
-	}
+	
+	/*
+	 * public RequestSpecification requestSpecification() throws IOException {
+	 * 
+	 * if(req==null) { PrintStream log =new PrintStream(new
+	 * FileOutputStream("logging.txt")); req=new
+	 * RequestSpecBuilder().setBaseUri(getPropertyValue("BaseURL")).addQueryParam(
+	 * "key", "qaclick123") .addFilter(RequestLoggingFilter.logRequestTo(log))
+	 * .addFilter(ResponseLoggingFilter.logResponseTo(log))
+	 * .setContentType(ContentType.JSON).build(); return req; } return req;
+	 * 
+	 * 
+	 * }
+	 */
+	
+	
+	
 	//propertyvalue=BaseURL
-	public String getPropertyValue(String propertyvalue) throws IOException
+	public static String getPropertyValue(String propertyvalue) throws IOException
 	{
 		pro=new Properties();
 		FileInputStream file=new FileInputStream("Properties_Files/Config.properties");
