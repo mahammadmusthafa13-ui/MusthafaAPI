@@ -27,7 +27,7 @@ public class StepDefination extends BaseClass
 	@Given("Perapre payload with {string} {string} {string}")
 	public void perapre_payload_with(String name, String language, String address) throws IOException {
 		//TestDataBuilder data= new TestDataBuilder();
-		reqSpec=given().spec(requestSpecification()).body(data.AddPlaceDataBuilder(name, language, address));  
+		reqSpec=given().spec(BaseClass.req).body(data.AddPlaceDataBuilder(name, language, address));  
 	}
 
 
@@ -70,7 +70,7 @@ public class StepDefination extends BaseClass
 	public void verify_place_id_created_maps_to_using_and_with(String name, String getPlaceAPI, String HttpMethod) throws IOException {
 		 placeid=getJsonPathValue(response, "place_id");
 		System.out.println(response.asString());
-		reqSpec=given().spec(requestSpecification()).queryParam("place_id", placeid);
+		reqSpec=given().spec(BaseClass.req).queryParam("place_id", placeid);
 		user_call_and_with(getPlaceAPI,HttpMethod);
 		System.out.println("response1 :   "+response.asString());
 		String namekey=getJsonPathValue(response, "name");
@@ -78,7 +78,7 @@ public class StepDefination extends BaseClass
 	}
 	@Given("Delete Payload")
 	public void delete_payload() throws IOException {
-		reqSpec=given().spec(requestSpecification()).body(data.deletePlaceBody(placeid));
+		reqSpec=given().spec(BaseClass.req).body(data.deletePlaceBody(placeid));
 	    
 	}
 	@When("Delete place using {string} and with {string}")
